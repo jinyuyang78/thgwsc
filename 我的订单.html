@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="Content/css/style.css">
+    <link href="Content/css/font-A.css" rel="stylesheet">
+</head>
+<body>
+<div class="conten">
+    <div class="dlbox">
+        <a href="javascript:void(0)" class="dlbtn dn">登录</a>
+        <div class="pull-right pull-right2">
+            <a href="javascript:void(0)" class="pic-avatara"><div class="pic-avatar pic-wrap"> <img src="Content/img/xt1.png" class="img-circle" alt="avatar" style="width:24px;height:24px;"></div> 710988935@qq.com</a>
+            <div class="user-menu">
+                <ul class="list-unstyled">
+                    <li><a href="#"><div class="pic-avatar pic-wrap">
+                        <img src="Content/img/xt1.png" class="img-circle" style="width:24px;height:24px;"></div> 710988935@qq.com</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的地址</a></li>
+                    <li><a href="#">我的账号</a></li>
+                    <li><a href="#" class="tczh flash">退出账号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="Content/img/logo.png" class="logo">
+
+    <div class="navbox pr">
+        <ul id="navul" class="pa">
+            <li ><a href="index.html">每周一花</a></li>
+            <li><a href="花儿首页.html">花儿</a></li>
+            <li ><a href="LIFE首页.html">听花LIFE</a></li>
+            <li ><a href="花艺课堂首页.html">花艺课堂</a></li>
+            <li><a href="http://www.listenflower.com">听花APP</a></li>
+        </ul>
+    </div>
+
+    <p class="grzy">710988935@qq.com的个人主页</p>
+
+    <div class="grzybox">
+
+        <ul class="list-unstyled fl">
+            <li class="active"><a href="我的订单.html">我的订单</a></li>
+            <li ><a href="我的收藏.html">我的收藏</a></li>
+            <li><a href="我的地址.html">我的地址</a></li>
+            <li ><a href="我的活动.html">我的活动</a></li>
+        </ul>
+        <div class="fl ddbox">
+            <ul class="xzzt">
+                <li><a href="javascript:void(0)">全部订单</a></li>
+                <li><a href="javascript:void(0)">代付款</a></li>
+                <li><a href="javascript:void(0)">待收货</a></li>
+                <li><a href="javascript:void(0)">已完成</a></li>
+                <li><a href="javascript:void(0)">退换</a></li>
+            </ul>
+
+            <ul class="ddlist">
+                <li style="background-color: #50ccaa;color: #fff;"><div class="ddxq fl text-center">订单详情</div> <div class="shr fl text-center">收货人</div> <div class="je fl text-center">金额</div> <div class="ddzt fl text-center">订单状态</div> <div class="cz fl text-center">操作</div></li>
+                <li>
+                    <div class="ddtop"><span>2016-06-26</span>&nbsp;<span>16:45:32</span>&nbsp;&nbsp;&nbsp;&nbsp;订单编号:<span>C20160826140526281</span>
+                        <a href="javascript:;" class="dd_delbtn" onclick="del(this)"></a>
+                    </div>
+                    <div class="xxbox">
+                        <div class="ddxq fl">
+                            <img src="Content/img/t1.jpg">
+                            <p class="ddname">简约生活单束花束</p>
+                            <p class="sdrq">99朵 &nbsp;&nbsp; 周六送达7月1日</p>
+                        </div>
+                        <div class="shr fl">
+                            <p class="nametel">韩亚  15210792815</p>
+                            <p class="addrss">北京市朝阳区十八里店乡横街子村237号嘉鑫家园B237</p>
+                        </div>
+                        <div class="je fl text-center" style="line-height: 95px;">¥79</div>
+                        <div class="ddzt fl text-center" style="line-height: 95px;">待发货</div>
+                        <div class="cz fl"><a href="javascript:;">去付款</a>  |  <a href="javascript:;" onclick="ckbz(this)">查看备注</a></div>
+                    </div>
+                    <div class="lybox">
+                        <div>不要菊花</div>
+                        <a href="javascript:;" class="sqbtn" onclick="sqly(this)">收起</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ddtop"><span>2016-06-26</span>&nbsp;<span>16:45:32</span>&nbsp;&nbsp;&nbsp;&nbsp;订单编号:<span>C20160826140526281</span>
+                        <a class="dd_delbtn" href="javascript:;"  onclick="del(this)"></a>
+                    </div>
+                    <div class="xxbox">
+                        <div class="ddxq fl">
+                            <img src="Content/img/t1.jpg">
+                            <p class="ddname">简约生活单束花束</p>
+                            <p class="sdrq">99朵 &nbsp;&nbsp; 周六送达7月2日</p>
+                        </div>
+                        <div class="shr fl">
+                            <p class="nametel">韩亚  15210792815</p>
+                            <p class="addrss">北京市朝阳区十八里店乡横街子村237号嘉鑫家园B237</p>
+                        </div>
+                        <div class="je fl text-center" style="line-height: 95px;">¥79</div>
+                        <div class="ddzt fl text-center" style="line-height: 95px;">待发货</div>
+                        <div class="cz fl"><a href="javascript:;">去付款</a>  |  <a href="javascript:;" onclick="ckbz(this)">查看备注</a> <a href="javascript:;">再次购买</a></div>
+                    </div>
+                    <div class="lybox">
+                        <div>不要菊花</div>
+                        <a href="javascript:;" class="sqbtn" onclick="sqly(this)">收起</a>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="ddtop"><span>2016-06-26</span>&nbsp;<span>16:45:32</span>&nbsp;&nbsp;&nbsp;&nbsp;订单编号:<span>C20160826140526281</span>
+                        <a class="dd_delbtn" href="javascript:;"  onclick="del(this)"></a>
+                    </div>
+                    <div class="xxbox">
+                        <div class="ddxq fl">
+                            <img src="Content/img/t1.jpg">
+                            <p class="ddname">简约生活单束花束</p>
+                            <p class="sdrq">99朵 &nbsp;&nbsp; 周六送达7月3日</p>
+                        </div>
+                        <div class="shr fl">
+                            <p class="nametel">韩亚  15210792815</p>
+                            <p class="addrss">北京市朝阳区十八里店乡横街子村237号嘉鑫家园B237</p>
+                        </div>
+                        <div class="je fl text-center" style="line-height: 95px;">¥79</div>
+                        <div class="ddzt fl text-center" style="line-height: 95px;">待发货</div>
+                        <div class="cz fl"><a href="javascript:;">去付款</a>  |  <a href="javascript:;" onclick="ckbz(this)">查看备注</a></div>
+                    </div>
+                    <div class="lybox">
+                        <div>不要菊花</div>
+                        <a href="javascript:;" class="sqbtn" onclick="sqly(this)">收起</a>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+<div class="foot">
+    <div class="footbox">
+        <ul class="lj">
+            <li><a href="#">关于听花</a></li>
+            <li><a href="#">购买说明</a></li>
+            <li><a href="#">退换货说明</a></li>
+            <li><a href="#">联系听花</a></li>
+        </ul>
+
+        <ul class="lj">
+            <li class="pr"><a href="javascript:;" class="jshover">客服微信号:listenflowers</a>
+                <div class="code1 pa"></div>
+            </li>
+
+        </ul>
+
+        <div class="col-lg-6 col-sm-6 text-right">
+            <ul class="icon-social list-inline">
+                <!--<li><a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></li>-->
+                <li class="pr">
+                    <div class="code2-wrap">
+                        <a href="javascript:;" class="jshover2"><i class="fa fa-weixin"></i>关注微信</a>
+                        <div class="code2 pa"></div>
+                    </div>
+                </li>
+                <!--<li><a href="http://www.duitang.com/people/1721555403/" target="_blank"><span class="icon-dui">堆</span></a></li>-->
+                <!--<li><a href="http://o2bra.lofter.com/" target="_blank"><span class="icon-L">L</span></a></li>-->
+            </ul>
+            <ul class="app-download list-inline">
+                <li><a href="https://itunes.apple.com/cn/app/yang-qi-yi-ge-yong-xin-tui/id885542780?l=en&amp;mt=8"><i class="fa fa-apple fa-2x"></i>iPhone版下载</a></li>
+                <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yongtai.o2bra"><i class="fa fa-android fa-2x"></i>Android版下载</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<p class="beian">Copyright © 2014 沪ICP备14035784号 北京听花科技有限公司</p>
+<div class="mask"></div>
+
+<script src="Content/js/jquery-2.2.4.min.js"></script>
+<script src="Content/js/layer.js"></script>
+<script>
+    $(function () {
+        $(".pull-right2").mouseover(function(){
+            $(".user-menu").css({"top":"0px","opacity":1,"z-index":999});
+        });
+        $(".user-menu").mouseout(function(){
+            $(".user-menu").css({"top":"-200px","opacity":0,"z-index":-111});
+        });
+        $("#navul li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        });
+        $('.jshover').hover(function () {
+            $('.code1').show();
+        }, function () {
+            $('.code1').hide();
+        });
+        $('.jshover2').hover(function () {
+            $('.code2').show();
+        }, function () {
+            $('.code2').hide();
+        });
+        $(document).on('click','.order-address li a',function () {
+            return false;
+        });
+        var wid=$(window).width();
+        var hei=$(window).height();
+        $('.mask').css({"width":wid,"height":hei});
+
+        $('#qpj').click(function(){
+            $('.mask').fadeIn(100);
+            $('.pjbox').slideDown(200);
+        });
+        $('.mask,#gb').click(function(){
+            $('.mask').fadeOut(100);
+            $('.pjbox').slideUp(200);
+        });
+        $(".plqdbtn").on('click',function () {
+            $('.mask').fadeOut(100);
+            $('.pjbox').slideUp(200);
+        });
+
+        $("#xzzffs li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+//    $(".dd_delbtn").on('click',function () {
+//        $(this).parents('li').remove()
+//    })
+    function del(obj) {
+       var $this=$(obj);
+        layer.msg('确认删除该订单吗？', {
+            time: 0 //不自动关闭
+            ,btn: ['确定', '取消']
+            ,yes: function(index){
+                layer.close(index);
+                $this.parents('li').remove()
+            }
+        });
+    }
+    function ckbz(obj) {
+        var $this=$(obj);
+        $this.parents('.xxbox').siblings('.lybox').slideDown(200)
+    }
+    function sqly(obj) {
+        var $this=$(obj);
+        $this.parent().slideUp(200)
+    }
+</script>
+</body>
+</html>

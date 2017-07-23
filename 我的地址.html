@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>我的地址</title>
+    <link rel="stylesheet" type="text/css" href="Content/css/style.css">
+    <link href="Content/css/font-A.css" rel="stylesheet">
+    <style>
+        .order-item  .form-control{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="conten">
+    <div class="dlbox">
+        <div class="pull-right pull-right2">
+            <a href="javascript:void(0)" class="pic-avatara"><div class="pic-avatar pic-wrap"> <img src="Content/img/xt1.png" class="img-circle" alt="avatar" style="width:24px;height:24px;"></div> 710988935@qq.com</a>
+            <div class="user-menu">
+                <ul class="list-unstyled">
+                    <li><a href="#"><div class="pic-avatar pic-wrap">
+                        <img src="Content/img/xt1.png" class="img-circle" style="width:24px;height:24px;"></div> 710988935@qq.com</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的地址</a></li>
+                    <li><a href="#">我的账号</a></li>
+                    <li><a href="#" class="tczh flash">退出账号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="Content/img/logo.png" class="logo">
+
+    <div class="navbox pr">
+        <ul id="navul" class="pa">
+            <li ><a href="index.html">每周一花</a></li>
+            <li><a href="花儿首页.html">花儿</a></li>
+            <li class="active"><a href="LIFE首页.html">听花LIFE</a></li>
+            <li ><a href="花艺课堂首页.html">花艺课堂</a></li>
+            <li><a href="http://www.listenflower.com">听花APP</a></li>
+        </ul>
+    </div>
+
+    <p class="grzy">710988935@qq.com的个人主页</p>
+
+    <div class="grzybox">
+
+        <ul class="list-unstyled fl">
+            <li ><a href="我的订单.html">我的订单</a></li>
+            <li ><a href="我的收藏.html">我的收藏</a></li>
+            <li class="active"><a href="我的地址.html">我的地址</a></li>
+            <li ><a href="我的活动.html">我的活动</a></li>
+        </ul>
+        <div class="addresbox fr">
+            <div class="xzaddresbox">
+                <h2>新增收货地址</h2>
+                <form>
+                <div class="inputbox">
+                    <input type="text" placeholder="姓名" id="shrname">
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="电话" maxlength="11" id="shrtel">
+                </div>
+
+                    <div class="form-group form-groupselect order-item ">
+                        <select class="form-control" id="province">
+                            <option>请选择省</option>
+                            <option data-value="110000">北京市</option>
+                            <option data-value="120000">天津市</option>
+                            <option data-value="130000">河北省</option>
+                            <option data-value="140000">山西省</option>
+                            <option data-value="150000">内蒙古自治区</option>
+                            <option data-value="210000">辽宁省</option>
+                            <option data-value="220000">吉林省</option>
+                            <option data-value="230000">黑龙江省</option>
+                            <option data-value="310000">上海市</option>
+                        </select>
+                        <select class="form-control" id="city" style="margin: 0 4%;">
+                            <option>请选择市</option>
+                            <option data-value="110000">北京市</option>
+                            <option data-value="120000">天津市</option>
+                        </select>
+                        <select class="form-control" id="area">
+                            <option>请选择区</option>
+                            <option data-value="110000">朝阳区</option>
+                            <option data-value="120000">四惠区</option>
+                            <option data-value="130000">河北区</option>
+                        </select>
+                    </div>
+
+                <div class="inputbox">
+                    <input type="text" placeholder="详细地址" id="shrxxdz">
+                </div>
+                </form>
+                <a href="javascript:;" onclick="saveaddres()" class="saveaddres">保存收货人信息</a>
+            </div>
+        </div>
+
+        <div class="ytjaddressbox fr">
+            <h2>常用地址</h2>
+            <div class="addressbox pr">
+                <div class="shrxx fl">
+                    <p><span class="qd">啊洋</span> <span>15210792815</span></p>
+                    <p><span class="qd">所在省份 ：</span> <span id="xgsheng">河北省</span><span id="xgshi">承德市</span><span id="xgxian">阿拉伯县</span></p>
+                    <p><span class="qd">详细地址 ：</span> <span>十八里店乡横街子村嘉鑫公园B237号</span></p>
+                </div>
+                <div class="addrescz pa">
+                    <a href="javascript:;">设为默认地址</a> |  <a href="javascript:;">修改</a>  <a href="javascript:;" onclick="del(this)">删除</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<div class="foot">
+    <div class="footbox">
+        <ul class="lj">
+            <li><a href="#">关于听花</a></li>
+            <li><a href="#">购买说明</a></li>
+            <li><a href="#">退换货说明</a></li>
+            <li><a href="#">联系听花</a></li>
+        </ul>
+
+        <ul class="lj">
+            <li class="pr"><a href="javascript:;" class="jshover">客服微信号:listenflowers</a>
+                <div class="code1 pa"></div>
+            </li>
+
+        </ul>
+
+        <div class="col-lg-6 col-sm-6 text-right">
+            <ul class="icon-social list-inline">
+                <!--<li><a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></li>-->
+                <li class="pr">
+                    <div class="code2-wrap">
+                        <a href="javascript:;" class="jshover2"><i class="fa fa-weixin"></i>关注微信</a>
+                        <div class="code2 pa"></div>
+                    </div>
+                </li>
+                <!--<li><a href="http://www.duitang.com/people/1721555403/" target="_blank"><span class="icon-dui">堆</span></a></li>-->
+                <!--<li><a href="http://o2bra.lofter.com/" target="_blank"><span class="icon-L">L</span></a></li>-->
+            </ul>
+            <ul class="app-download list-inline">
+                <li><a href="https://itunes.apple.com/cn/app/yang-qi-yi-ge-yong-xin-tui/id885542780?l=en&amp;mt=8"><i class="fa fa-apple fa-2x"></i>iPhone版下载</a></li>
+                <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yongtai.o2bra"><i class="fa fa-android fa-2x"></i>Android版下载</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<p class="beian">Copyright © 2014 沪ICP备14035784号 北京听花科技有限公司</p>
+<div class="mask"></div>
+
+<script src="Content/js/jquery-2.2.4.min.js"></script>
+<script src="Content/js/layer.js"></script>
+<script>
+    $(function () {
+        $(".pull-right2").mouseover(function(){
+            $(".user-menu").css({"top":"0px","opacity":1,"z-index":999});
+        });
+        $(".user-menu").mouseout(function(){
+            $(".user-menu").css({"top":"-200px","opacity":0,"z-index":-111});
+        });
+        $("#navul li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        });
+        $('.jshover').hover(function () {
+            $('.code1').show();
+        }, function () {
+            $('.code1').hide();
+        });
+        $('.jshover2').hover(function () {
+            $('.code2').show();
+        }, function () {
+            $('.code2').hide();
+        });
+        var wid=$(window).width();
+        var hei=$(window).height();
+        $('.mask').css({"width":wid,"height":hei});
+
+        $('#qpj').click(function(){
+            $('.mask').fadeIn(100);
+            $('.pjbox').slideDown(200);
+        });
+        $('.mask,#gb').click(function(){
+            $('.mask').fadeOut(100);
+            $('.pjbox').slideUp(200);
+        });
+        $(".plqdbtn").on('click',function () {
+            $('.mask').fadeOut(100);
+            $('.pjbox').slideUp(200);
+        });
+
+        $("#xzzffs li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+
+    function del(obj) {
+       var $this=$(obj);
+        layer.msg('确认删除该地址吗？', {
+            time: 0 //不自动关闭
+            ,btn: ['确定', '取消']
+            ,yes: function(index){
+                layer.close(index);
+                $this.parents('.addressbox').remove()
+            }
+        });
+    }
+    function saveaddres(){
+        var name=$("#shrname").val();
+        var tel=$("#shrtel").val();
+        var xxdz=$("#shrxxdz").val();
+        var sheng=$("#province").val();
+        var shi=$("#city").val();
+        var qu=$("#area").val();
+        if(name===""){
+            layer.msg('请填写姓名',{time:1000})
+        }else  if(tel===""|| !/^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/i.test(tel)){
+            layer.msg('手机号码不正确',{time:1000})
+        }else if(sheng=="请选择省"){
+            layer.msg('请选择省',{time:1000})
+        }else if(shi=="请选择市"){
+            layer.msg('请选择市',{time:1000})
+        }else if(qu=="请选择区"){
+            layer.msg('请选择区',{time:1000})
+        }else if(xxdz==""){
+            layer.msg('请填写详细地址',{time:1000})
+        }else {
+            $("<div class='addressbox pr'>" +
+                        "<div class='shrxx fl'>" +
+                        "<p><span class='qd'>"+name+"</span> <span>"+tel+"</span></p>" +
+                        "<p><span class='qd'>所在省份 ：</span> <span id='xgsheng'>"+sheng+"</span>" +
+                        "<span id='xgshi'>"+shi+"</span><span id='xgxian'>"+qu+"</span></p> " +
+                        "<p><span class='qd'>详细地址 ：</span> <span>"+xxdz+"</span></p>" +
+                    "</div> " +
+                    "<div class='addrescz pa'> " +
+                        "<a href='javascript:;'>设为默认地址</a> |  <a href='javascript:;'>修改</a> " +
+                        " <a href='javascript:;' onclick='del(this)'>删除</a> " +
+                    "</div> " +
+                    "</div>").appendTo('.ytjaddressbox');
+            $('form')[0].reset()
+        }
+    }
+    function ckbz(obj) {
+        var $this=$(obj);
+        $this.parents('.xxbox').siblings('.lybox').slideDown(200)
+    }
+    function sqly(obj) {
+        var $this=$(obj);
+        $this.parent().slideUp(200)
+    }
+</script>
+</body>
+</html>

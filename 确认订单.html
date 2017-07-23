@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>确认订单</title>
+    <link rel="stylesheet" type="text/css" href="Content/css/style.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+</head>
+<body>
+<div class="conten">
+    <div class="dlbox">
+        <a href="javascript:void(0)" class="dlbtn dn">登录</a>
+        <div class="pull-right pull-right2">
+            <a href="javascript:void(0)" class="pic-avatara"><div class="pic-avatar pic-wrap"> <img src="Content/img/xt1.png" class="img-circle" alt="avatar" style="width:24px;height:24px;"></div> 710988935@qq.com</a>
+            <div class="user-menu">
+                <ul class="list-unstyled">
+                    <li><a href="#"><div class="pic-avatar pic-wrap">
+                        <img src="Content/img/xt1.png" class="img-circle" style="width:24px;height:24px;"></div> 710988935@qq.com</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的地址</a></li>
+                    <li><a href="#">我的账号</a></li>
+                    <li><a href="#" class="tczh flash">退出账号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="Content/img/logo.png" class="logo">
+
+    <div class="navbox pr">
+        <ul id="navul" class="pa">
+            <li ><a href="index.html">每周一花</a></li>
+            <li class="active"><a href="花儿首页.html">花儿</a></li>
+            <li ><a href="LIFE首页.html">听花LIFE</a></li>
+            <li ><a href="花艺课堂首页.html">花艺课堂</a></li>
+            <li><a href="http://www.listenflower.com">听花APP</a></li>
+        </ul>
+    </div>
+
+    <div class="order-info container container-wrap">
+        <div class="row" style="overflow: hidden;">
+            <div class="col-sm-12 col-lg-12 ordermar">
+                <div class="order-step text-center">
+                    <ul class="list-inline text-center">
+                        <li class="active">
+                            <div class="iconr-order"><i class="bin bin-order"></i></div>
+                            <p>1.确认订单</p>
+                        </li>
+                        <li><i class="bin bin-allow"></i></li>
+                        <li>
+                            <div class="iconr-order"><i class="fa fa-check"></i></div>
+                            <p>2.提交成功</p>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /step end  fa fa-dot-circle-o -->
+
+            <div class="dzxxbox">
+                <div class="order-item">
+                    <p class="order-item-title">
+                        收件人信息
+                    </p>
+                    <ul class="order-address order-addressedit list-unstyled">
+                            <li class="active addbox">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <h4>靳阳阳  15210792815</h4>
+                                <p>北京市市辖区朝阳区四惠大厦 </p>
+                                <span class="l-green"><a href="javascript:;" onclick="delBtn(this)">删除</a></span>
+                            </li>
+
+                        <li id="syxdz">
+                            <i class="fa fa-dot-circle-o"></i>
+                            <p>新增收货地址</p>
+                        </li>
+                    </ul>
+                    <div class="collapse" id="collapse1">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="姓名" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="电话" id="phone" maxlength="11">
+                        </div>
+                        <div class="form-group form-groupselect">
+                            <select class="form-control" id="province">
+                                <option>请选择省</option>
+                                <option data-value="110000">北京市</option>
+                                <option data-value="120000">天津市</option>
+                                <option data-value="130000">河北省</option>
+                                <option data-value="140000">山西省</option>
+                                <option data-value="150000">内蒙古自治区</option>
+                                <option data-value="210000">辽宁省</option>
+                                <option data-value="220000">吉林省</option>
+                                <option data-value="230000">黑龙江省</option>
+                                <option data-value="310000">上海市</option>
+                            </select>
+                            <select class="form-control" id="city" >
+                                <option>请选择市</option>
+                                <option data-value="110000">北京市</option>
+                                <option data-value="120000">天津市</option>
+                            </select>
+                            <select class="form-control" id="area">
+                                <option>请选择区</option>
+                                <option data-value="110000">朝阳区</option>
+                                <option data-value="120000">四惠区</option>
+                                <option data-value="130000">河北区</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="2" placeholder="详细地址" id="address"></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-primary flash" style="float: right;margin-bottom: 20px;" id="bclxr">保存收件人信息</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- /address end -->
+
+            <div class="spxxbox">
+                <div class="order-item">
+                    <p class="order-item-title">商品信息</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#" target="_blank">
+                                <img class="media-object" src="http://www.o2bra.com.cn/assets/uploads/products/71d9fcca08378a3dc4be05d9e083fa07.jpg" alt="商品" style="width: 80px; height: 80px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p class="media-heading">PAUL JOE × COSABELLA Juliette 蓝紫色网纱拼粉色吊带睡裙</p>
+                        </div>
+                        <div class="media-right pd15">
+                            99朵
+                        </div>
+                        <div class="media-right pd15 text-center">
+                            <p>周六送达</p>
+                            <p>7月1日</p>
+                        </div>
+                        <div class="media-right pd15 color2">
+                            ¥&nbsp;860
+                        </div>
+                    </div>
+
+                    <div class="total clearfix">
+                        <span class="pull-left">订单总额：</span>
+                        <span class="pull-right c-green f-20 fr"> ¥&nbsp;<span>860</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bzbox">
+            <span>备注</span>
+            <textarea placeholder="输入备注信息！" class="aiyu"></textarea>
+        </div>
+        <div class="jhdhbox">
+            <p>忌讳的花</p>
+            <ul id="jhdh">
+                <li> <i class="fa fa-dot-circle-o"></i><span>孕妇不宜</span></li>
+                <li> <i class="fa fa-dot-circle-o"></i><span>黄花</span></li>
+                <li> <i class="fa fa-dot-circle-o"></i><span>菊花</span></li>
+                <li> <i class="fa fa-dot-circle-o"></i><span>百合</span></li>
+                <li> <i class="fa fa-dot-circle-o"></i><span>白花</span></li>
+                <li> <i class="fa fa-dot-circle-o"></i><span>绣球</span></li>
+            </ul>
+        </div>
+        <div class="fl zhifubox">
+            <p class="order-item-title">付款方式</p>
+            <div class="btn-pay">
+                <ul class="list-unstyled" id="xzzffs">
+
+                    <li class="active">
+                        <i class="fa fa-dot-circle-o"></i>
+                        <button type="button" class="btn btn-default zfbicon">支付宝支付</button>
+                    </li>
+                    <li>
+                        <i class="fa fa-dot-circle-o"></i>
+                        <button type="button" class="btn btn-default wxicon">微信支付</button>
+                    </li>
+                </ul>
+            </div>
+            <p class="order-item-title">订单总额：<span class="c-green f-20">¥&nbsp;860</span></p>
+            <a href="javascript:void(0);" class="btn btn-primary mb-30 flash qrdd">确认订单</a>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="foot">
+    <div class="footbox">
+        <ul class="lj">
+            <li><a href="#">关于听花</a></li>
+            <li><a href="#">购买说明</a></li>
+            <li><a href="#">退换货说明</a></li>
+            <li><a href="#">联系听花</a></li>
+        </ul>
+
+        <ul class="lj">
+            <li class="pr"><a href="javascript:;" class="jshover">客服微信号:listenflowers</a>
+                <div class="code1 pa"></div>
+            </li>
+
+        </ul>
+
+        <div class="col-lg-6 col-sm-6 text-right">
+            <ul class="icon-social list-inline">
+                <!--<li><a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></li>-->
+                <li class="pr">
+                    <div class="code2-wrap">
+                        <a href="javascript:;" class="jshover2"><i class="fa fa-weixin"></i>关注微信</a>
+                        <div class="code2 pa"></div>
+                    </div>
+                </li>
+                <!--<li><a href="http://www.duitang.com/people/1721555403/" target="_blank"><span class="icon-dui">堆</span></a></li>-->
+                <!--<li><a href="http://o2bra.lofter.com/" target="_blank"><span class="icon-L">L</span></a></li>-->
+            </ul>
+            <ul class="app-download list-inline">
+                <li><a href="https://itunes.apple.com/cn/app/yang-qi-yi-ge-yong-xin-tui/id885542780?l=en&amp;mt=8"><i class="fa fa-apple fa-2x"></i>iPhone版下载</a></li>
+                <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yongtai.o2bra"><i class="fa fa-android fa-2x"></i>Android版下载</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<p class="beian">Copyright © 2014 沪ICP备14035784号 北京听花科技有限公司</p>
+<div class="login-dialog modal-dialog dn">
+    <div class="modal-content">
+        <div class="modal-header text-center">
+            <img src="Content/img/dllogo.png" alt="听花">
+            <div class="wrap-dialog-title"></div>
+        </div>
+        <div class="modal-body">
+            <div class="account-box">
+                <form class="form-signin">
+                    <div class="form-group" id="email_div">
+                        <input type="text" class="form-control tel" id="tel" placeholder="电话号码" maxlength="11">
+                    </div>
+                    <div class="form-group pr" id="password_div">
+                        <input type="password" class="form-control yzm" id="yzm" placeholder="验证码" maxlength="4">
+                        <input type="button" id="btn" class="fsyzm pa" value="免费获取验证码" onclick="settime(this)" />
+                    </div>
+                    <div class="text-center">
+                        <button class="btn purple-bg btn-block" type="button" id="login_btn">登录</button>
+                    </div>
+                </form>
+            </div><!-- /login end -->
+        </div>
+    </div>
+</div>
+<div class="mask"></div>
+
+<script src="Content/js/jquery-2.2.4.min.js"></script>
+<script src="Content/js/layer.js"></script>
+<script>
+    $(function () {
+        $(".pull-right2").mouseover(function(){
+            $(".user-menu").css({"top":"0px","opacity":1,"z-index":999});
+        });
+        $(".user-menu").mouseout(function(){
+            $(".user-menu").css({"top":"-200px","opacity":0,"z-index":-111});
+        });
+        $("#navul li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        });
+        $('.scan').on('click',function () {
+            $(this).toggleClass('ysc');
+        });
+        $('.jshover').hover(function () {
+            $('.code1').show();
+        }, function () {
+            $('.code1').hide();
+        });
+        $('.jshover2').hover(function () {
+            $('.code2').show();
+        }, function () {
+            $('.code2').hide();
+        });
+        $('#bclxr').on('click',function () {
+            var name = $("#name").val(); //姓名
+            var telval = $("#phone").val(); //电话
+            var province = $("#province").val(); //省
+            var city = $("#city").val(); //市
+            var area=$("#area").val();//区
+            var address=$("#address").val();//地址
+            if(name.length === 0 || name === "") {
+                layer.msg('姓名不能为空',{time: 1000});
+                return false
+            }else if(telval.length === 0 || telval === "") {
+                layer.msg('手机号码不能为空',{time: 1000});
+                return false
+            }else if(!/^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/i.test(telval)){
+                layer.msg('手机号码不正确',{time: 1000});
+                return false
+            }else if(province === "请选择省"){
+                layer.msg('请选择省',{time: 1000});
+                return false
+            }else if(city === "请选择市"){
+                layer.msg('请选择市',{time: 1000});
+                return false
+            }else if(area === "请选择区"){
+                layer.msg('请选择区',{time: 1000});
+                return false
+            }else if(address.length === 0 || address === ""){
+                layer.msg('详细地址不能为空',{time: 1000});
+                return false
+            }else {
+                $("#syxdz").before("<li class='active addbox'><i class='fa fa-dot-circle-o'></i>" +
+                        "<h4>"+name+telval+"</h4><p>"+province+city+area+address+"</p><span class='l-green'>" +
+                        "<a href='javascript:void(0);'>删除</a></span> </li>");
+                $("#syxdz").removeClass('active');
+                $("#collapse1").slideUp(200);
+            }
+        });
+        $(document).on('click','.order-address li a',function () {
+           return false;
+        });
+        var wid=$(window).width();
+        var hei=$(window).height();
+        $('.mask').css({"width":wid,"height":hei});
+
+        $('.dlbtn').click(function(){
+            $('.mask').fadeIn(100);
+            $('.login-dialog').slideDown(200);
+        });
+        $('.mask').click(function(){
+            $('.mask').fadeOut(100);
+            $('.login-dialog').slideUp(200);
+        });
+
+        $("#xzzffs li").on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        $(document).on('click',".order-address li",function (e) {
+            $(this).addClass('active').siblings().removeClass('active');
+            if($('#syxdz').hasClass('active')){
+                $("#collapse1").slideDown(200);
+            }else {
+                $("#collapse1").slideUp(200);
+            }
+        });
+        var arr=[];
+        $("#jhdh li").on('click',function () {
+            var text=$(this).find('span').html();
+            if(arr.indexOf(text)===-1){
+                if(arr.length>1){
+                    layer.msg('最多选择两种哦~~',{time:1000});
+                    return false;
+                }
+                arr=arr.concat(text);
+                $(this).addClass('selected');
+                console.log(arr)
+            }else {
+                arr.splice(arr.indexOf(text),1);
+                $(this).removeClass('selected')
+            }
+
+        });
+        $(".qrdd").on('click',function () {
+            window.location.href="包月订单提交成功.html"
+        })
+    });
+    function delBtn(obj) {
+        var $this=$(obj);
+        layer.msg('确认删除该地址吗？', {
+            time: 0 //不自动关闭
+            ,btn: ['确定', '取消']
+            ,yes: function(index){
+                layer.close(index);
+                $this.parents('li').remove()
+            }
+        });
+    }
+</script>
+</body>
+</html>
